@@ -1,5 +1,4 @@
 # Linux or MacOS
-version: '3.2'
 services:
   kafka:
     restart: always
