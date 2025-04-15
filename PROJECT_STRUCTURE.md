@@ -15,7 +15,7 @@ thingsboard/
 ├── edqs/               # Entity Data Query Service
 ├── img/                # Static image assets
 ├── monitoring/         # System monitoring and observability components
-├── msa/                # Microservices architecture components
+├── msa/                # Microservices and monolithic deployment
 ├── netty-mqtt/         # Netty-based MQTT protocol implementation
 ├── packaging/          # Distribution packaging configurations
 ├── rest-client/        # Java client for ThingsBoard REST API
@@ -113,22 +113,17 @@ System monitoring and observability components:
 
 This module provides capabilities for monitoring ThingsBoard's operational health, performance metrics, and system status, enabling administrators to ensure system reliability and quickly identify issues.
 
-### Microservices (`/msa`)
+### Microservices and monolithic deployment (`/msa`)
 
-Contains components for ThingsBoard's microservices architecture, like:
+This module orchestrates the packaging and Dockerization of ThingsBoard in both monolithic and microservices modes.
 
-- `/msa/js-executor` - JavaScript execution environment for server-side scripting
-- `/msa/tb` - Core ThingsBoard microservice for monolithic deployment
-- `/msa/tb-node` - ThingsBoard node microservice for clustered deployments
-- `/msa/web-ui` - Web UI microservice for serving the frontend application
+For monolithic deployments:
 
-Key features include:
+`/msa/tb`:
 
-- Kubernetes deployment configurations
-- Service discovery and registration mechanisms
-- Inter-service communication protocols
-- Load balancing and failover support
-- Separate scaling policies for different components
+- Provides the build for the ThingsBoard single docker images.
+- Generates the final `Dockerfile`, along with the necessary .sh, .xml, .conf, and .deb files.
+- Supports PostgreSQL (`docker-postgres`) and hybrid PostgreSQL (entities) + Cassandra (timeseries) (`docker-cassandra`) setups.
 
 This module enables ThingsBoard to be deployed in various configurations from single-node setups to highly available production clusters with independent scaling of different services.
 
