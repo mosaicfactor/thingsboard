@@ -1,4 +1,5 @@
-# Linux or MacOS
+# Linux or MacOS using Kafka
+# Recommended for on-prem, production installations
 services:
   kafka:
     restart: always

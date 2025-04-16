@@ -1,4 +1,5 @@
-# Windows
+# Windows using Kafka
+# Recommended for on-prem, production installations
 services:
   kafka:
     restart: always
