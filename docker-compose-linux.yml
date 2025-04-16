@@ -1,4 +1,4 @@
-# Linux or MacOS using Kafka
+# Running on Linux or MacOS using Kafka and the custom ThingsBoard image
 # Recommended for on-prem, production installations
 services:
   kafka:

@@ -1,4 +1,4 @@
-# Windows using Kafka
+# Running on Windows using Kafka and the custom ThingsBoard image
 # Recommended for on-prem, production installations
 services:
   kafka:
