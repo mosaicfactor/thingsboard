@@ -119,7 +119,15 @@ export class LayoutWidgetsArray implements Iterable<Widget> {
   }
 
   setWidgetIds(widgetIds: string[]) {
-    this.widgetIds = widgetIds;
+    const dashboard = this.dashboardCtx.getDashboard();
+    // Manually exclude some widgets from the home dashboard
+    const excludedWidgetTitles = [
+    ];
+    this.widgetIds = widgetIds.filter(id => {
+      const widget = dashboard.configuration.widgets[id];
+      // console.log(widget.config.title);
+      return widget && !excludedWidgetTitles.includes(widget.config.title);
+    });
     this.loaded = true;
   }
 
