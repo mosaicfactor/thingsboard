@@ -704,7 +704,8 @@ const menuFilters = new Map<MenuId, MenuFilter>([
     MenuId.edges, (authState) => authState.edgesSupportEnabled
   ],
   [
-    MenuId.edge_management, (authState) => authState.edgesSupportEnabled
+    MenuId.edge_management, () => false
+    // MenuId.edge_management, (authState) => authState.edgesSupportEnabled
   ],
   [
     MenuId.rulechain_templates, (authState) => authState.edgesSupportEnabled

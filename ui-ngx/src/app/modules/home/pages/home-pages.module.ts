@@ -65,7 +65,7 @@ import { MobileModule } from '@home/pages/mobile/mobile.module';
     DeviceModule,
     AssetModule,
     AlarmModule,
-    EdgeModule,
+    // EdgeModule,
     EntityViewModule,
     CustomerModule,
     RuleChainModule,
