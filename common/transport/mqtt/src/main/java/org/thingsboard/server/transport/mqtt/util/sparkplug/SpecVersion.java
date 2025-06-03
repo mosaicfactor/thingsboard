@@ -13,28 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.thingsboard.server.queue.discovery;
+package org.thingsboard.server.transport.mqtt.util.sparkplug;
 
-import org.thingsboard.server.common.msg.queue.ServiceType;
-import org.thingsboard.server.gen.transport.TransportProtos.ServiceInfo;
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Target;
 
-import java.util.Set;
-import java.util.UUID;
-
-public interface TbServiceInfoProvider {
-
-    String getServiceId();
-
-    String getServiceType();
-
-    ServiceInfo getServiceInfo();
-
-    boolean isService(ServiceType serviceType);
-
-    ServiceInfo generateNewServiceInfoWithCurrentSystemInfo();
-
-    Set<UUID> getAssignedTenantProfiles();
-
-    boolean setReady(boolean ready);
-
+@Documented
+@Target(ElementType.TYPE)
+public @interface SpecVersion {
+    String spec() default "";
+    String version();
 }
