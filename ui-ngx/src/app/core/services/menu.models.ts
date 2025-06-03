@@ -704,8 +704,7 @@ const menuFilters = new Map<MenuId, MenuFilter>([
     MenuId.edges, (authState) => authState.edgesSupportEnabled
   ],
   [
-    MenuId.edge_management, () => false
-    // MenuId.edge_management, (authState) => authState.edgesSupportEnabled
+    MenuId.edge_management, (authState) => authState.edgesSupportEnabled
   ],
   [
     MenuId.rulechain_templates, (authState) => authState.edgesSupportEnabled
@@ -802,13 +801,13 @@ const defaultUserMenuMap = new Map<Authority, MenuReference[]>([
       },
       {id: MenuId.customers},
       {id: MenuId.rule_chains},
-      {
-        id: MenuId.edge_management,
-        pages: [
-          {id: MenuId.edges},
-          {id: MenuId.rulechain_templates}
-        ]
-      },
+      // {
+      //   id: MenuId.edge_management,
+      //   pages: [
+      //     {id: MenuId.edges},
+      //     {id: MenuId.rulechain_templates}
+      //   ]
+      // },
       {
         id: MenuId.features,
         pages: [
@@ -878,23 +877,23 @@ const defaultUserMenuMap = new Map<Authority, MenuReference[]>([
     Authority.CUSTOMER_USER,
     [
       {id: MenuId.home},
-      {id: MenuId.alarms},
+      // {id: MenuId.alarms},
       {id: MenuId.dashboards},
-      {
-        id: MenuId.entities,
-        pages: [
-          {id: MenuId.devices},
-          {id: MenuId.assets},
-          {id: MenuId.entity_views}
-        ]
-      },
-      {id: MenuId.edge_instances},
-      {
-        id: MenuId.notifications_center,
-        pages: [
-          {id: MenuId.notification_inbox}
-        ]
-      }
+      // {
+      //   id: MenuId.entities,
+      //   pages: [
+      //     {id: MenuId.devices},
+      //     {id: MenuId.assets},
+      //     {id: MenuId.entity_views}
+      //   ]
+      // },
+      // {id: MenuId.edge_instances},
+      // {
+      //   id: MenuId.notifications_center,
+      //   pages: [
+      //     {id: MenuId.notification_inbox}
+      //   ]
+      // }
     ]
   ]
 ]);
