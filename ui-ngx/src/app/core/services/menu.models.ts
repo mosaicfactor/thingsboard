@@ -106,7 +106,7 @@ export enum MenuId {
   version_control = 'version_control',
   api_usage = 'api_usage',
   trendz_settings = 'trendz_settings',
-  ai_models = 'ai_models'
+  ai_models = 'ai_models',
 }
 
 declare type MenuFilter = (authState: AuthState) => boolean;
@@ -119,8 +119,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'home.home',
       type: 'link',
       path: '/home',
-      icon: 'home'
-    }
+      icon: 'home',
+    },
   ],
   [
     MenuId.tenants,
@@ -129,8 +129,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'tenant.tenants',
       type: 'link',
       path: '/tenants',
-      icon: 'supervisor_account'
-    }
+      icon: 'supervisor_account',
+    },
   ],
   [
     MenuId.tenant_profiles,
@@ -139,8 +139,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'tenant-profile.tenant-profiles',
       type: 'link',
       path: '/tenantProfiles',
-      icon: 'mdi:alpha-t-box'
-    }
+      icon: 'mdi:alpha-t-box',
+    },
   ],
   [
     MenuId.resources,
@@ -149,8 +149,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'admin.resources',
       type: 'toggle',
       path: '/resources',
-      icon: 'folder'
-    }
+      icon: 'folder',
+    },
   ],
   [
     MenuId.widget_library,
@@ -159,8 +159,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'widget.widget-library',
       type: 'link',
       path: '/resources/widgets-library',
-      icon: 'now_widgets'
-    }
+      icon: 'now_widgets',
+    },
   ],
   [
     MenuId.widget_types,
@@ -169,8 +169,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'widget.widgets',
       type: 'link',
       path: '/resources/widgets-library/widget-types',
-      icon: 'now_widgets'
-    }
+      icon: 'now_widgets',
+    },
   ],
   [
     MenuId.widgets_bundles,
@@ -179,8 +179,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'widgets-bundle.widgets-bundles',
       type: 'link',
       path: '/resources/widgets-library/widgets-bundles',
-      icon: 'now_widgets'
-    }
+      icon: 'now_widgets',
+    },
   ],
   [
     MenuId.images,
@@ -189,8 +189,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'image.gallery',
       type: 'link',
       path: '/resources/images',
-      icon: 'filter'
-    }
+      icon: 'filter',
+    },
   ],
   [
     MenuId.scada_symbols,
@@ -199,8 +199,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'scada.symbols',
       type: 'link',
       path: '/resources/scada-symbols',
-      icon: 'view_in_ar'
-    }
+      icon: 'view_in_ar',
+    },
   ],
   [
     MenuId.resources_library,
@@ -209,8 +209,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'resource.resources-library',
       type: 'link',
       path: '/resources/resources-library',
-      icon: 'mdi:rhombus-split'
-    }
+      icon: 'mdi:rhombus-split',
+    },
   ],
   [
     MenuId.javascript_library,
@@ -219,8 +219,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'javascript.javascript-library',
       type: 'link',
       path: '/resources/javascript-library',
-      icon: 'mdi:language-javascript'
-    }
+      icon: 'mdi:language-javascript',
+    },
   ],
   [
     MenuId.notifications_center,
@@ -229,8 +229,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'notification.notification-center',
       type: 'link',
       path: '/notification',
-      icon: 'mdi:message-badge'
-    }
+      icon: 'mdi:message-badge',
+    },
   ],
   [
     MenuId.notification_inbox,
@@ -240,8 +240,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       fullName: 'notification.notification-inbox',
       type: 'link',
       path: '/notification/inbox',
-      icon: 'inbox'
-    }
+      icon: 'inbox',
+    },
   ],
   [
     MenuId.notification_sent,
@@ -251,8 +251,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       fullName: 'notification.notification-sent',
       type: 'link',
       path: '/notification/sent',
-      icon: 'outbox'
-    }
+      icon: 'outbox',
+    },
   ],
   [
     MenuId.notification_recipients,
@@ -262,8 +262,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       fullName: 'notification.notification-recipients',
       type: 'link',
       path: '/notification/recipients',
-      icon: 'contacts'
-    }
+      icon: 'contacts',
+    },
   ],
   [
     MenuId.notification_templates,
@@ -273,8 +273,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       fullName: 'notification.notification-templates',
       type: 'link',
       path: '/notification/templates',
-      icon: 'mdi:message-draw'
-    }
+      icon: 'mdi:message-draw',
+    },
   ],
   [
     MenuId.notification_rules,
@@ -284,8 +284,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       fullName: 'notification.notification-rules',
       type: 'link',
       path: '/notification/rules',
-      icon: 'mdi:message-cog'
-    }
+      icon: 'mdi:message-cog',
+    },
   ],
   [
     MenuId.ai_models,
@@ -294,8 +294,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'ai-models.ai-models',
       type: 'link',
       path: '/settings/ai-models',
-      icon: 'auto_awesome'
-    }
+      icon: 'auto_awesome',
+    },
   ],
   [
     MenuId.mobile_center,
@@ -304,8 +304,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'mobile.mobile-center',
       type: 'link',
       path: '/mobile-center',
-      icon: 'smartphone'
-    }
+      icon: 'smartphone',
+    },
   ],
   [
     MenuId.mobile_apps,
@@ -314,8 +314,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'mobile.applications',
       type: 'link',
       path: '/mobile-center/applications',
-      icon: 'list'
-    }
+      icon: 'list',
+    },
   ],
   [
     MenuId.mobile_bundles,
@@ -324,8 +324,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'mobile.bundles',
       type: 'link',
       path: '/mobile-center/bundles',
-      icon: 'mdi:package'
-    }
+      icon: 'mdi:package',
+    },
   ],
   [
     MenuId.mobile_qr_code_widget,
@@ -335,8 +335,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       fullName: 'mobile.qr-code-widget',
       type: 'link',
       path: '/mobile-center/qr-code-widget',
-      icon: 'qr_code'
-    }
+      icon: 'qr_code',
+    },
   ],
   [
     MenuId.settings,
@@ -345,8 +345,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'admin.settings',
       type: 'link',
       path: '/settings',
-      icon: 'settings'
-    }
+      icon: 'settings',
+    },
   ],
   [
     MenuId.general,
@@ -356,8 +356,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       fullName: 'admin.general-settings',
       type: 'link',
       path: '/settings/general',
-      icon: 'settings_applications'
-    }
+      icon: 'settings_applications',
+    },
   ],
   [
     MenuId.mail_server,
@@ -366,8 +366,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'admin.outgoing-mail',
       type: 'link',
       path: '/settings/outgoing-mail',
-      icon: 'mail'
-    }
+      icon: 'mail',
+    },
   ],
   [
     MenuId.home_settings,
@@ -377,8 +377,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       fullName: 'admin.home-settings',
       type: 'link',
       path: '/settings/home',
-      icon: 'settings_applications'
-    }
+      icon: 'settings_applications',
+    },
   ],
   [
     MenuId.notification_settings,
@@ -388,8 +388,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       fullName: 'admin.notifications-settings',
       type: 'link',
       path: '/settings/notifications',
-      icon: 'mdi:message-badge'
-    }
+      icon: 'mdi:message-badge',
+    },
   ],
   [
     MenuId.repository_settings,
@@ -399,8 +399,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       fullName: 'admin.repository-settings',
       type: 'link',
       path: '/settings/repository',
-      icon: 'manage_history'
-    }
+      icon: 'manage_history',
+    },
   ],
   [
     MenuId.auto_commit_settings,
@@ -410,8 +410,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       fullName: 'admin.auto-commit-settings',
       type: 'link',
       path: '/settings/auto-commit',
-      icon: 'settings_backup_restore'
-    }
+      icon: 'settings_backup_restore',
+    },
   ],
   [
     MenuId.queues,
@@ -420,8 +420,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'admin.queues',
       type: 'link',
       path: '/settings/queues',
-      icon: 'swap_calls'
-    }
+      icon: 'swap_calls',
+    },
   ],
   [
     MenuId.security_settings,
@@ -430,8 +430,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'security.security',
       type: 'toggle',
       path: '/security-settings',
-      icon: 'security'
-    }
+      icon: 'security',
+    },
   ],
   [
     MenuId.security_settings_general,
@@ -441,8 +441,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       fullName: 'security.general-settings',
       type: 'link',
       path: '/security-settings/general',
-      icon: 'settings_applications'
-    }
+      icon: 'settings_applications',
+    },
   ],
   [
     MenuId.two_fa,
@@ -451,8 +451,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'admin.2fa.2fa',
       type: 'link',
       path: '/security-settings/2fa',
-      icon: 'mdi:two-factor-authentication'
-    }
+      icon: 'mdi:two-factor-authentication',
+    },
   ],
   [
     MenuId.oauth2,
@@ -461,8 +461,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'admin.oauth2.oauth2',
       type: 'link',
       path: '/security-settings/oauth2',
-      icon: 'mdi:shield-account'
-    }
+      icon: 'mdi:shield-account',
+    },
   ],
   [
     MenuId.domains,
@@ -471,8 +471,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'admin.oauth2.domains',
       type: 'link',
       path: '/security-settings/oauth2/domains',
-      icon: 'domain'
-    }
+      icon: 'domain',
+    },
   ],
   [
     MenuId.clients,
@@ -481,8 +481,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'admin.oauth2.clients',
       type: 'link',
       path: '/security-settings/oauth2/clients',
-      icon: 'public'
-    }
+      icon: 'public',
+    },
   ],
   [
     MenuId.audit_log,
@@ -491,8 +491,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'audit-log.audit-logs',
       type: 'link',
       path: '/security-settings/auditLogs',
-      icon: 'track_changes'
-    }
+      icon: 'track_changes',
+    },
   ],
   [
     MenuId.alarms,
@@ -501,8 +501,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'alarm.alarms',
       type: 'link',
       path: '/alarms',
-      icon: 'mdi:alert-outline'
-    }
+      icon: 'mdi:alert-outline',
+    },
   ],
   [
     MenuId.dashboards,
@@ -511,8 +511,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'dashboard.dashboards',
       type: 'link',
       path: '/dashboards',
-      icon: 'dashboards'
-    }
+      icon: 'dashboards',
+    },
   ],
   [
     MenuId.entities,
@@ -521,8 +521,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'entity.entities',
       type: 'toggle',
       path: '/entities',
-      icon: 'category'
-    }
+      icon: 'category',
+    },
   ],
   [
     MenuId.devices,
@@ -531,8 +531,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'device.devices',
       type: 'link',
       path: '/entities/devices',
-      icon: 'devices_other'
-    }
+      icon: 'devices_other',
+    },
   ],
   [
     MenuId.assets,
@@ -541,8 +541,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'asset.assets',
       type: 'link',
       path: '/entities/assets',
-      icon: 'domain'
-    }
+      icon: 'domain',
+    },
   ],
   [
     MenuId.entity_views,
@@ -551,8 +551,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'entity-view.entity-views',
       type: 'link',
       path: '/entities/entityViews',
-      icon: 'view_quilt'
-    }
+      icon: 'view_quilt',
+    },
   ],
   [
     MenuId.gateways,
@@ -561,8 +561,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'gateway.gateways',
       type: 'link',
       path: '/entities/gateways',
-      icon: 'lan'
-    }
+      icon: 'lan',
+    },
   ],
   [
     MenuId.profiles,
@@ -571,8 +571,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'profiles.profiles',
       type: 'toggle',
       path: '/profiles',
-      icon: 'badge'
-    }
+      icon: 'badge',
+    },
   ],
   [
     MenuId.device_profiles,
@@ -581,8 +581,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'device-profile.device-profiles',
       type: 'link',
       path: '/profiles/deviceProfiles',
-      icon: 'mdi:alpha-d-box'
-    }
+      icon: 'mdi:alpha-d-box',
+    },
   ],
   [
     MenuId.asset_profiles,
@@ -591,8 +591,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'asset-profile.asset-profiles',
       type: 'link',
       path: '/profiles/assetProfiles',
-      icon: 'mdi:alpha-a-box'
-    }
+      icon: 'mdi:alpha-a-box',
+    },
   ],
   [
     MenuId.customers,
@@ -601,8 +601,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'customer.customers',
       type: 'link',
       path: '/customers',
-      icon: 'supervisor_account'
-    }
+      icon: 'supervisor_account',
+    },
   ],
   [
     MenuId.rule_chains,
@@ -611,8 +611,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'rulechain.rulechains',
       type: 'link',
       path: '/ruleChains',
-      icon: 'settings_ethernet'
-    }
+      icon: 'settings_ethernet',
+    },
   ],
   [
     MenuId.edge_management,
@@ -621,8 +621,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'edge.management',
       type: 'toggle',
       path: '/edgeManagement',
-      icon: 'settings_input_antenna'
-    }
+      icon: 'settings_input_antenna',
+    },
   ],
   [
     MenuId.edges,
@@ -632,8 +632,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       fullName: 'edge.edge-instances',
       type: 'link',
       path: '/edgeManagement/instances',
-      icon: 'router'
-    }
+      icon: 'router',
+    },
   ],
   [
     MenuId.edge_instances,
@@ -643,8 +643,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       fullName: 'edge.edge-instances',
       type: 'link',
       path: '/edgeManagement/instances',
-      icon: 'router'
-    }
+      icon: 'router',
+    },
   ],
   [
     MenuId.rulechain_templates,
@@ -654,8 +654,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       fullName: 'edge.edge-rulechain-templates',
       type: 'link',
       path: '/edgeManagement/ruleChains',
-      icon: 'settings_ethernet'
-    }
+      icon: 'settings_ethernet',
+    },
   ],
   [
     MenuId.features,
@@ -664,8 +664,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'feature.advanced-features',
       type: 'toggle',
       path: '/features',
-      icon: 'construction'
-    }
+      icon: 'construction',
+    },
   ],
   [
     MenuId.otaUpdates,
@@ -674,8 +674,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'ota-update.ota-updates',
       type: 'link',
       path: '/features/otaUpdates',
-      icon: 'memory'
-    }
+      icon: 'memory',
+    },
   ],
   [
     MenuId.version_control,
@@ -684,8 +684,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'version-control.version-control',
       type: 'link',
       path: '/features/vc',
-      icon: 'history'
-    }
+      icon: 'history',
+    },
   ],
   [
     MenuId.api_usage,
@@ -694,8 +694,8 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       name: 'api-usage.api-usage',
       type: 'link',
       path: '/usage',
-      icon: 'insert_chart'
-    }
+      icon: 'insert_chart',
+    },
   ],
   [
     MenuId.trendz_settings,
@@ -705,209 +705,203 @@ export const menuSectionMap = new Map<MenuId, MenuSection>([
       fullName: 'admin.trendz-settings',
       type: 'link',
       path: '/settings/trendz',
-      icon: 'trendz-settings'
-    }
-  ]
+      icon: 'trendz-settings',
+    },
+  ],
 ]);
 
 const menuFilters = new Map<MenuId, MenuFilter>([
-  [
-    MenuId.edges, (authState) => authState.edgesSupportEnabled
-  ],
-  [
-    MenuId.edge_management, (authState) => authState.edgesSupportEnabled
-  ],
-  [
-    MenuId.rulechain_templates, (authState) => authState.edgesSupportEnabled
-  ]
+  [MenuId.edges, (authState) => authState.edgesSupportEnabled],
+  [MenuId.edge_management, (authState) => authState.edgesSupportEnabled],
+  [MenuId.rulechain_templates, (authState) => authState.edgesSupportEnabled],
 ]);
 
 const defaultUserMenuMap = new Map<Authority, MenuReference[]>([
   [
     Authority.SYS_ADMIN,
     [
-      {id: MenuId.home},
-      {id: MenuId.tenants},
-      {id: MenuId.tenant_profiles},
+      { id: MenuId.home },
+      { id: MenuId.tenants },
+      { id: MenuId.tenant_profiles },
       {
         id: MenuId.resources,
         pages: [
           {
             id: MenuId.widget_library,
             pages: [
-              {id: MenuId.widget_types},
-              {id: MenuId.widgets_bundles}
-            ]
+              { id: MenuId.widget_types },
+              { id: MenuId.widgets_bundles },
+            ],
           },
-          {id: MenuId.images},
-          {id: MenuId.scada_symbols},
-          {id: MenuId.javascript_library},
-          {id: MenuId.resources_library}
-        ]
+          { id: MenuId.images },
+          { id: MenuId.scada_symbols },
+          { id: MenuId.javascript_library },
+          { id: MenuId.resources_library },
+        ],
       },
-      {
-        id: MenuId.notifications_center,
-        pages: [
-          {id: MenuId.notification_inbox},
-          {id: MenuId.notification_sent},
-          {id: MenuId.notification_recipients},
-          {id: MenuId.notification_templates},
-          {id: MenuId.notification_rules}
-        ]
-      },
-      {
-        id: MenuId.mobile_center,
-        pages: [
-          {id: MenuId.mobile_bundles},
-          {id: MenuId.mobile_apps},
-          {id: MenuId.mobile_qr_code_widget}
-        ]
-      },
-      {
-        id: MenuId.settings,
-        pages: [
-          {id: MenuId.general},
-          {id: MenuId.mail_server},
-          {id: MenuId.notification_settings},
-          {id: MenuId.queues}
-        ]
-      },
-      {
-        id: MenuId.security_settings,
-        pages: [
-          {id: MenuId.security_settings_general},
-          {id: MenuId.two_fa},
-          {
-            id: MenuId.oauth2,
-            pages: [
-              {id: MenuId.domains},
-              {id: MenuId.clients}
-            ]
-          }
-        ]
-      }
-    ]
+      // {
+      //   id: MenuId.notifications_center,
+      //   pages: [
+      //     { id: MenuId.notification_inbox },
+      //     { id: MenuId.notification_sent },
+      //     { id: MenuId.notification_recipients },
+      //     { id: MenuId.notification_templates },
+      //     { id: MenuId.notification_rules },
+      //   ],
+      // },
+      // {
+      //   id: MenuId.mobile_center,
+      //   pages: [
+      //     { id: MenuId.mobile_bundles },
+      //     { id: MenuId.mobile_apps },
+      //     { id: MenuId.mobile_qr_code_widget },
+      //   ],
+      // },
+      // {
+      //   id: MenuId.settings,
+      //   pages: [
+      //     { id: MenuId.general },
+      //     { id: MenuId.mail_server },
+      //     { id: MenuId.notification_settings },
+      //     { id: MenuId.queues },
+      //   ],
+      // },
+      // {
+      //   id: MenuId.security_settings,
+      //   pages: [
+      //     { id: MenuId.security_settings_general },
+      //     { id: MenuId.two_fa },
+      //     {
+      //       id: MenuId.oauth2,
+      //       pages: [
+      //         { id: MenuId.domains },
+      //         { id: MenuId.clients },
+      //       ],
+      //     },
+      //   ],
+      // },
+    ],
   ],
   [
     Authority.TENANT_ADMIN,
     [
-      {id: MenuId.home},
-      {id: MenuId.alarms},
-      {id: MenuId.dashboards},
+      { id: MenuId.home },
+      { id: MenuId.alarms },
+      { id: MenuId.dashboards },
       {
         id: MenuId.entities,
         pages: [
-          {id: MenuId.devices},
-          {id: MenuId.assets},
-          {id: MenuId.entity_views},
-          {id: MenuId.gateways}
-        ]
+          { id: MenuId.devices },
+          { id: MenuId.assets },
+          { id: MenuId.entity_views },
+          { id: MenuId.gateways },
+        ],
       },
       {
         id: MenuId.profiles,
         pages: [
-          {id: MenuId.device_profiles},
-          {id: MenuId.asset_profiles}
-        ]
+          { id: MenuId.device_profiles },
+          { id: MenuId.asset_profiles },
+        ],
       },
-      {id: MenuId.customers},
-      {id: MenuId.rule_chains},
+      { id: MenuId.customers },
+      { id: MenuId.rule_chains },
       // {
       //   id: MenuId.edge_management,
       //   pages: [
-      //     {id: MenuId.edges},
-      //     {id: MenuId.rulechain_templates}
-      //   ]
+      //     { id: MenuId.edges },
+      //     { id: MenuId.rulechain_templates },
+      //   ],
       // },
-      {
-        id: MenuId.features,
-        pages: [
-          {id: MenuId.otaUpdates},
-          {id: MenuId.version_control}
-        ]
-      },
-      {
-        id: MenuId.resources,
-        pages: [
-          {
-            id: MenuId.widget_library,
-            pages: [
-              {id: MenuId.widget_types},
-              {id: MenuId.widgets_bundles}
-            ]
-          },
-          {id: MenuId.images},
-          {id: MenuId.scada_symbols},
-          {id: MenuId.javascript_library},
-          {id: MenuId.resources_library}
-        ]
-      },
-      {
-        id: MenuId.notifications_center,
-        pages: [
-          {id: MenuId.notification_inbox},
-          {id: MenuId.notification_sent},
-          {id: MenuId.notification_recipients},
-          {id: MenuId.notification_templates},
-          {id: MenuId.notification_rules}
-        ]
-      },
-      {
-        id: MenuId.mobile_center,
-        pages: [
-          {id: MenuId.mobile_bundles},
-          {id: MenuId.mobile_apps}
-        ]
-      },
-      {id: MenuId.api_usage},
-      {
-        id: MenuId.settings,
-        pages: [
-          {id: MenuId.home_settings},
-          {id: MenuId.notification_settings},
-          {id: MenuId.repository_settings},
-          {id: MenuId.auto_commit_settings},
-          {id: MenuId.trendz_settings},
-          {id: MenuId.ai_models}
-        ]
-      },
-      {
-        id: MenuId.security_settings,
-        pages: [
-          {id: MenuId.audit_log},
-          {
-            id: MenuId.oauth2,
-            pages: [
-              {id: MenuId.clients}
-            ]
-          }
-        ]
-      }
-    ]
+      // {
+      //   id: MenuId.features,
+      //   pages: [
+      //     { id: MenuId.otaUpdates },
+      //     { id: MenuId.version_control },
+      //   ],
+      // },
+      // {
+      //   id: MenuId.resources,
+      //   pages: [
+      //     {
+      //       id: MenuId.widget_library,
+      //       pages: [
+      //         { id: MenuId.widget_types },
+      //         { id: MenuId.widgets_bundles },
+      //       ],
+      //     },
+      //     { id: MenuId.images },
+      //     { id: MenuId.scada_symbols },
+      //     { id: MenuId.javascript_library },
+      //     { id: MenuId.resources_library },
+      //   ],
+      // },
+      // {
+      //   id: MenuId.notifications_center,
+      //   pages: [
+      //     { id: MenuId.notification_inbox },
+      //     { id: MenuId.notification_sent },
+      //     { id: MenuId.notification_recipients },
+      //     { id: MenuId.notification_templates },
+      //     { id: MenuId.notification_rules },
+      //   ],
+      // },
+      // {
+      //   id: MenuId.mobile_center,
+      //   pages: [
+      //     { id: MenuId.mobile_bundles },
+      //     { id: MenuId.mobile_apps },
+      //   ],
+      // },
+      // { id: MenuId.api_usage },
+      // {
+      //   id: MenuId.settings,
+      //   pages: [
+      //     { id: MenuId.home_settings },
+      //     { id: MenuId.notification_settings },
+      //     { id: MenuId.repository_settings },
+      //     { id: MenuId.auto_commit_settings },
+      //     { id: MenuId.trendz_settings },
+      //     { id: MenuId.ai_models },
+      //   ],
+      // },
+      // {
+      //   id: MenuId.security_settings,
+      //   pages: [
+      //     { id: MenuId.audit_log },
+      //     {
+      //       id: MenuId.oauth2,
+      //       pages: [
+      //         { id: MenuId.clients },
+      //       ],
+      //     },
+      //   ],
+      // },
+    ],
   ],
   [
     Authority.CUSTOMER_USER,
     [
-      {id: MenuId.home},
-      // {id: MenuId.alarms},
-      {id: MenuId.dashboards},
-      // {
-      //   id: MenuId.entities,
-      //   pages: [
-      //     {id: MenuId.devices},
-      //     {id: MenuId.assets},
-      //     {id: MenuId.entity_views}
-      //   ]
-      // },
-      // {id: MenuId.edge_instances},
+      { id: MenuId.home },
+      { id: MenuId.alarms },
+      { id: MenuId.dashboards },
+      {
+        id: MenuId.entities,
+        pages: [
+          { id: MenuId.devices },
+          { id: MenuId.assets },
+          { id: MenuId.entity_views },
+        ],
+      },
+      // { id: MenuId.edge_instances },
       // {
       //   id: MenuId.notifications_center,
       //   pages: [
-      //     {id: MenuId.notification_inbox}
-      //   ]
-      // }
-    ]
-  ]
+      //     { id: MenuId.notification_inbox },
+      //   ],
+      // },
+    ],
+  ],
 ]);
 
 const defaultHomeSectionMap = new Map<Authority, HomeSectionReference[]>([
@@ -916,90 +910,105 @@ const defaultHomeSectionMap = new Map<Authority, HomeSectionReference[]>([
     [
       {
         name: 'tenant.management',
-        places: [MenuId.tenants, MenuId.tenant_profiles]
+        places: [MenuId.tenants, MenuId.tenant_profiles],
       },
       {
         name: 'widget.management',
-        places: [MenuId.widget_library]
+        places: [MenuId.widget_library],
       },
       {
         name: 'admin.system-settings',
-        places: [MenuId.general, MenuId.mail_server,
-          MenuId.notification_settings, MenuId.security_settings, MenuId.oauth2, MenuId.domains,
-          MenuId.clients, MenuId.two_fa, MenuId.resources_library, MenuId.queues]
-      }
-    ]
+        places: [
+          MenuId.general,
+          MenuId.mail_server,
+          MenuId.notification_settings,
+          MenuId.security_settings,
+          MenuId.oauth2,
+          MenuId.domains,
+          MenuId.clients,
+          MenuId.two_fa,
+          MenuId.resources_library,
+          MenuId.queues,
+        ],
+      },
+    ],
   ],
   [
     Authority.TENANT_ADMIN,
     [
       {
         name: 'rulechain.management',
-        places: [MenuId.rule_chains]
+        places: [MenuId.rule_chains],
       },
       {
         name: 'customer.management',
-        places: [MenuId.customers]
+        places: [MenuId.customers],
       },
       {
         name: 'asset.management',
-        places: [MenuId.assets, MenuId.asset_profiles]
+        places: [MenuId.assets, MenuId.asset_profiles],
       },
       {
         name: 'device.management',
-        places: [MenuId.devices, MenuId.device_profiles, MenuId.otaUpdates]
+        places: [MenuId.devices, MenuId.device_profiles, MenuId.otaUpdates],
       },
       {
         name: 'entity-view.management',
-        places: [MenuId.entity_views]
+        places: [MenuId.entity_views],
       },
       {
         name: 'edge.management',
-        places: [MenuId.edges, MenuId.rulechain_templates]
+        places: [MenuId.edges, MenuId.rulechain_templates],
       },
       {
         name: 'dashboard.management',
-        places: [MenuId.widget_library, MenuId.dashboards]
+        places: [MenuId.widget_library, MenuId.dashboards],
       },
       {
         name: 'version-control.management',
-        places: [MenuId.version_control]
+        places: [MenuId.version_control],
       },
       {
         name: 'audit-log.audit',
-        places: [MenuId.audit_log, MenuId.api_usage]
+        places: [MenuId.audit_log, MenuId.api_usage],
       },
       {
         name: 'admin.system-settings',
-        places: [MenuId.home_settings, MenuId.resources_library, MenuId.repository_settings, MenuId.auto_commit_settings, MenuId.trendz_settings]
-      }
-    ]
+        places: [
+          MenuId.home_settings,
+          MenuId.resources_library,
+          MenuId.repository_settings,
+          MenuId.auto_commit_settings,
+          MenuId.trendz_settings,
+        ],
+      },
+    ],
   ],
   [
     Authority.CUSTOMER_USER,
     [
       {
         name: 'asset.view-assets',
-        places: [MenuId.assets]
+        places: [MenuId.assets],
       },
       {
         name: 'device.view-devices',
-        places: [MenuId.devices]
+        places: [MenuId.devices],
       },
       {
         name: 'entity-view.management',
-        places: [MenuId.entity_views]
+        places: [MenuId.entity_views],
       },
       {
         name: 'edge.management',
-        places: [MenuId.edge_instances]
+        places: [MenuId.edge_instances],
       },
       {
         name: 'dashboard.view-dashboards',
-        places: [MenuId.dashboards]
-      }
-    ]
-  ]
+        places: [MenuId.dashboards],
+      },
+    ],
+  ],
 ]);
 
 export const buildUserMenu = (authState: AuthState): Array<MenuSection> => {
@@ -1053,7 +1062,7 @@ const homeReferenceToHomeSection = (availableMenuSections: MenuSection[], refere
   if (places.length) {
     return {
       name: reference.name,
-      places
+      places,
     };
   } else {
     return undefined;
