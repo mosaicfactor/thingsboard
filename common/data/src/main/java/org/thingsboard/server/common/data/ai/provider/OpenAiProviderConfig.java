@@ -13,7 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.thingsboard.server.dao.util;
+package org.thingsboard.server.common.data.ai.provider;
 
-public class TenantRateLimitException extends Exception {
-}
+import jakarta.validation.constraints.NotNull;
+
+public record OpenAiProviderConfig(
+        @NotNull String apiKey
+) implements AiProviderConfig {}
