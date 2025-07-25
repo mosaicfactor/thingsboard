@@ -124,8 +124,10 @@ export class LayoutWidgetsArray implements Iterable<Widget> {
     const excludedWidgetTitles = [
       'Documentation',
       'Quick links',
-      'Devices',
-      'Alarms',
+      'Select show mobile QR code',
+      'Version',
+      'Functions',
+      'Configured features',
     ];
     this.widgetIds = widgetIds.filter(id => {
       const widget = dashboard.configuration.widgets[id];
