@@ -20,6 +20,8 @@ export const environment = {
 // @ts-ignore
   tbVersion: TB_VERSION,
 // @ts-ignore
+  ncVersion: NC_VERSION,
+// @ts-ignore
   supportedLangs: SUPPORTED_LANGS,
   defaultLang: 'en_US'
 };

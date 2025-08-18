@@ -33,6 +33,7 @@ const defineTbVariablesPlugin: Plugin = {
       langs.push(item.name.slice(item.name.lastIndexOf("-") + 1, -5));
     });
     options.define.TB_VERSION = JSON.stringify(packageJson.version);
+    options.define.NC_VERSION = JSON.stringify(packageJson.nanochronia.version);
     options.define.SUPPORTED_LANGS = JSON.stringify(langs);
     options.define.ngJitMode = 'true';
   },

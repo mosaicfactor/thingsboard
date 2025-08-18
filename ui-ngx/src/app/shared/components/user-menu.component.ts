@@ -23,6 +23,7 @@ import { selectAuthUser, selectUserDetails } from '@core/auth/auth.selectors';
 import { map } from 'rxjs/operators';
 import { AuthService } from '@core/auth/auth.service';
 import { Router } from '@angular/router';
+import { environment as env } from '@env/environment';
 
 @Component({
   selector: 'tb-user-menu',
@@ -33,6 +34,9 @@ import { Router } from '@angular/router';
 export class UserMenuComponent implements OnInit, OnDestroy {
 
   @Input() displayUserInfo: boolean;
+
+  nanochroniaVersion: string = env.ncVersion;
+  contactNumber: string = '+34 600 000 000';
 
   authorities = Authority;
 

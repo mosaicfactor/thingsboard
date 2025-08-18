@@ -33,7 +33,6 @@
       letter-spacing: .005em;
       opacity: .8;
     }
-
   }
 
   .mat-icon.tb-mini-avatar {
@@ -47,4 +46,26 @@
 
 .tb-user-menu-items {
   min-width: 256px;
+
+  .tb-user-menu-footer {
+    padding: 8px 16px 0px 16px;
+
+    .tb-user-menu-footer-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      min-height: 24px;
+      font-size: 0.75rem;
+    }
+
+    .tb-user-menu-footer-label {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    .tb-user-menu-footer-value {
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.8);
+      font-variant-numeric: tabular-nums;
+    }
+  }
 }

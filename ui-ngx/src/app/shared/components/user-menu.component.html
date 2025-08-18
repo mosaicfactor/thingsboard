@@ -36,6 +36,17 @@
         <mat-icon class="material-icons">exit_to_app</mat-icon>
         <span translate>home.logout</span>
       </button>
+      <mat-divider></mat-divider>
+      <div class="tb-user-menu-footer">
+        <div class="tb-user-menu-footer-row">
+          <span class="tb-user-menu-footer-label" translate>widgets.version-info.title</span>
+          <span class="tb-user-menu-footer-value">{{ nanochroniaVersion }}</span>
+        </div>
+        <div class="tb-user-menu-footer-row">
+          <span class="tb-user-menu-footer-label" translate>widgets.version-info.contact-us</span>
+          <span class="tb-user-menu-footer-value">{{ contactNumber }}</span>
+        </div>
+      </div>
     </div>
   </mat-menu>
 </section>
