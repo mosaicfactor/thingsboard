@@ -10,7 +10,7 @@ Based on ThingsBoard v4.3.0.
 
 ### Added
 
-- Version number and contact information in the footer of the user menu.
+- Platform version number and contact information in the footer of the user menu.
 
 ### Changed
 
@@ -28,3 +28,4 @@ Based on ThingsBoard v4.3.0.
 
 - **Widget filtering**: Implemented a filter function in `dashboard-page.models.ts` that excludes widgets by title.
 - **Navigation cleanup**: Menu items were disabled by commenting out their configuration entries in `menu.models.ts`.
+- **Version & contact info**: The platform version number is defined in `package.json` and rendered alongside contact details in the user menu footer in `user-menu.component.ts`.
